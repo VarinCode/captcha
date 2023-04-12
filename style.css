@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,700&family=KoHo&family=Mali&family=Oswald&family=Sriracha&display=swap");
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  margin: 0;
+  background: #12c2e9;
+  background: -webkit-linear-gradient(to left, #f64f59, #c471ed, #12c2e9);
+  background: linear-gradient(to left, #f64f59, #c471ed, #12c2e9);
+}
+
+section {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+section .container {
+  position: relative;
+  top: 50%;
+  height: 200pt;
+  width: 310pt;
+  padding: 20px;
+  background-color: rgb(243, 247, 250);
+  border-radius: 20px;
+  box-shadow: 13px 0px 70px 35px rgba(0, 0, 0, 0.2);
+}
+section .container .bg-render {
+  background-image: url("img/blackboard.jpg");
+  border: rgba(29, 29, 29, 0.8431372549) 3px solid;
+}
+section .container h1 {
+  transform: rotate(11deg);
+  cursor: context-menu;
+  background: url("img/noise.jpg");
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 49px;
+  z-index: 23;
+  user-select: none;
+}
+section .container form input {
+  margin-top: 23px;
+  padding: 0 5px;
+  text-align: center;
+  font-size: 20px;
+  width: 18rem;
+  height: 2rem;
+  border: #93999b 1.95px solid;
+  border-radius: 23px;
+  outline: none;
+}
+section .container form ::placeholder {
+  font-size: medium;
+  text-transform: capitalize;
+  color: #93999b;
+}
+section .container form input:focus {
+  border: #7560ee 1.95px solid;
+}
+section .container form button {
+  cursor: pointer;
+}
+section .container form .btn-group {
+  position: absolute;
+  overflow: hidden;
+  left: 84.5%;
+  transform: translate(0, -302%);
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  width: fit-content;
+}
+section .container form .btn-group #btn-reset,
+section .container form .btn-group #btn-volume,
+section .container form .btn-group .fa-spin,
+section .container form .btn-group .fa-shake {
+  cursor: pointer;
+  color: #424747;
+  margin: 2px 0 3px 0;
+  font-size: 21px;
+  border: none;
+  background: none;
+  width: auto;
+}
+section .container form #btn-submit {
+  text-transform: capitalize;
+  font-weight: bolder;
+  color: rgb(253, 250, 240);
+  font-size: 17.3px;
+  margin-top: 24px;
+  width: 9rem;
+  height: 2.5rem;
+  background: linear-gradient(to right, #dad6d6, #c2c1c1, #8a8989, rgb(18, 18, 19));
+  border: 1px;
+  border-radius: 3px;
+}
+section .container form #btn-submit:hover {
+  transition: all 0.32s ease;
+  background: #181818;
+}
+
+/*# sourceMappingURL=style.css.map */
