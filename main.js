@@ -17,7 +17,6 @@ function randomWords(l) {
     for (let i = 0; i < l; i++) {
         str += chars[Math.floor(Math.random() * chars.length)];
     }
-    render.s
     render.innerHTML = str;
     console.log(`letters: ${str}`)
 }
